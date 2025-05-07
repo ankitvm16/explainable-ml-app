@@ -1,6 +1,14 @@
 import pickle
 import os
 import logging
+import streamlit.components.v1 as components
+import shap
+
+def st_shap(plot, height=None):
+    """Renders a SHAP plot in Streamlit."""
+    shap_html = f"<head>{shap.getjs()}</head><body>{plot.html()}</body>"
+    components.html(shap_html, height=height or 500, scrolling=True)
+
 
 # Function to save the trained model
 def save_model(model, model_filename):
