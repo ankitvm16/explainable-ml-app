@@ -6,7 +6,7 @@ structure = {
         "__init__.py",
         "data_preprocessing.py",
         "model_training.py",
-        "model_evaluation.py",
+        "evaluation_metrics.py",
         "explainability.py",
         "utils.py"
     ],
@@ -37,7 +37,7 @@ def train_model(X, y):
     model.fit(X_train, y_train)
     return model, X_test, y_test
 ''',
-    "app/model_evaluation.py": '''from sklearn.metrics import classification_report, accuracy_score
+    "app/evaluation_metrics.py": '''from sklearn.metrics import classification_report, accuracy_score
 
 def evaluate_model(model, X_test, y_test):
     predictions = model.predict(X_test)
