@@ -1,6 +1,15 @@
 streamlit
 pandas
+numpy
 scikit-learn
 shap
 lime
 matplotlib
+plotly
+transformers>=4.30.0
+torch
+torchvision
+torchaudio
+accelerate
+sentencepiece
+llama-cpp-python>=0.2.24
