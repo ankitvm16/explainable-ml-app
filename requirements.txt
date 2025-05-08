@@ -13,3 +13,5 @@ torchaudio
 accelerate
 sentencepiece
 llama-cpp-python>=0.2.24
+alibi
+dice-ml
